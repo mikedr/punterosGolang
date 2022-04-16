@@ -31,9 +31,9 @@ El tipo de un puntero se escribe usando el síbolo ***** (asterísco), seguido d
 
 Entonces podemos declarar variables que contienen punteros. Un puntero puede solo contener punteros a un tipo de valor.
 
-`
+```
 var miEntero int //declaración de un entero
 var miPunteroAunEntero *int	//declaración de un puntero a un entero
 miPunteroAunEntero = &miEntero	//asignación de un puntero a la dirección de memoria de la variable declarada
-`
+```
 
