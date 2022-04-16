@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main(){
-  valor := true
-  fmt.Println("Valor antes del metodo: ", valor)
-  negar(valor)
-  fmt.Println("Valor despues del metodo: ", valor)
+  valorParaNegar := true
+  fmt.Println("Valor antes del metodo: ", valorParaNegar)
+  negar(valorParaNegar)
+  fmt.Println("Valor despues del metodo: ", valorParaNegar)
 }
 
 func negar(valorParaNegar bool) bool {
