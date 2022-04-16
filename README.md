@@ -10,7 +10,7 @@ Teniendo en cuenta esta [aplicación](https://github.com/mikedr/punterosGolang/b
 
 ## Punteros
 
-Es posible obtener la dirección de memoria de una variable usando el operado & (ampersand), el cual en Go se lee como "la dirección de". Por ejemplo, esta [aplicación](https://github.com/mikedr/punterosGolang/blob/main/PasoPorValor.go) declara e inicializa una variable, luego imprime por pantalla su valor y "la dirección de" memoria de la misma.
+Es posible obtener la dirección de memoria de una variable usando el operando **&** (ampersand), el cual en Go se lee como "la dirección de". Por ejemplo, esta [aplicación](https://github.com/mikedr/punterosGolang/blob/main/PasoPorValor.go) declara e inicializa una variable, luego imprime por pantalla su valor y "la dirección de" memoria de la misma.
 
 Qué es una dirección de memoria? Es un referencia a una ubicación específica en la memoria, donde se pueden guardar variables de todo tipo:
 
@@ -24,3 +24,16 @@ Qué es una dirección de memoria? Es un referencia a una ubicación específica
 |`0xc000040268`|	9.12	|
 
 Los valores que representan una dirección de memoria son conocidos como **punteros**, ya que apuntan a la ubicación donde la variable se encuentra.
+
+## Tipos punteros
+
+El tipo de un puntero se escribe usando el síbolo ***** (asterísco), seguido del tipo de variable al que apunta. The tipo de un puntero a una variable `int`, por ejemplo, sería `*int`, lo cual se lee como "un puntero a un entero".
+
+Entonces podemos declarar variables que contienen punteros. Un puntero puede solo contener punteros a un tipo de valor.
+
+`
+var miEntero int //declaración de un entero
+var miPunteroAunEntero *int	//declaración de un puntero a un entero
+miPunteroAunEntero = &miEntero	//asignación de un puntero a la dirección de memoria de la variable declarada
+`
+
