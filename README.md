@@ -15,10 +15,12 @@ Es posible obtener la dirección de memoria de una variable usando el operado & 
 Qué es una dirección de memoria? Es un referencia a una ubicación específica en la memoria, donde se pueden guardar variables de todo tipo:
 
 |	Dirección de memoria	|	Valor que contiene |
-|---|:---:|
+|:---:|:---:|
 |`0xc000040240`|	true	|
 |`0xc000040248`|	25	|
 |`0xc000040250`|	"River Plate"	|
 |`0xc000040258`|	...	|
 |`0xc000040260`|	...	|
 |`0xc000040268`|	9.12	|
+
+Los valores que representan una dirección de memoria son conocidos como **punteros**, ya que apuntan a la ubicación donde la variable se encuentra.
